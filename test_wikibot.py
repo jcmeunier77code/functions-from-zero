@@ -2,6 +2,7 @@ from mylib.bot import scrape
 from wikibot import cli_scrape
 from click.testing import CliRunner
 
+
 def test_scrape():
     """
     Test the scrape function.
@@ -13,9 +14,8 @@ def test_scrape():
     assert len(result.split(".")) >= 1
 
 
-
 def test_wikibot():
-  runner = CliRunner()
-  result = runner.invoke(cli_scrape, ['--name', 'Microsoft', '--lenght', '1'])
-  assert result.exit_code == 0
-  assert 'Microsoft' in result.output 
+    runner = CliRunner()
+    result = runner.invoke(cli_scrape, ["--name", "Microsoft", "--lenght", "1"])
+    assert result.exit_code == 0
+    assert "Microsoft" in result.output
