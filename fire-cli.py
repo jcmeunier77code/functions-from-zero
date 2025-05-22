@@ -3,12 +3,8 @@ from mylib.bot import scrape
 
 # This script is a command line interface (CLI) for the scrape function.
 # It allows users to scrape the first sentence of a Wikipedia page using command line arguments.
-if __name__ == '__main__':
-  """
-  This script is a command line interface (CLI) for the scrape function.
-  It allows users to scrape the first sentence of a Wikipedia page using command line arguments.
-  """
-  fire.Fire(scrape)
+if __name__ == "__main__":
+    fire.Fire(scrape)
 
 # Usage in CLI:
 # python fire-cli.py --name Microsoft --lenght 1
