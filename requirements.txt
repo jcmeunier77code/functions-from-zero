@@ -6,3 +6,6 @@ ipython
 pylance
 click
 fire
+fastapi
+uvicorn[standard]
+pydantic
