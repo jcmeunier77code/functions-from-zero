@@ -9,7 +9,7 @@ live demo to build et deploy functions
 Something like this 
 ```zsh
 curl -X 'POST' \
-  'http://localhost:8080/predict' \
+  'http://localhost:8080/wiki' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -31,4 +31,9 @@ docker image ls
 ```zsh
 docker run -p 127.0.0.1:8080:8080 ffz-app:v1.0
 ```
+
+### Invoke 
+
+run 'invoke.sh'
+
 
